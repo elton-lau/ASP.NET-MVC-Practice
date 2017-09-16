@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 using System.Web.Mvc;
 using Vidly.Models;
 using Vidly.ViewModels;
@@ -25,9 +26,7 @@ namespace Vidly.Controllers
         // GET: Customer
         public ActionResult Index()
         {
-            var customers = new List<Customer>();
-            foreach (var customer in _context.Customers)
-                customers.Add(customer);
+            var customers = _context.Customers.Include(c => c.MembershipTypeId).ToList();
             return View(customers);
 
         }
