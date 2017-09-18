@@ -23,6 +23,17 @@ namespace Vidly.Controllers
             _context.Dispose();
         }
 
+        public ActionResult New()
+        {
+            var membershipTypes = _context.MembershipTypes.ToList();
+            var viewMdoel = new NewCustomerViewModel
+            {
+                MembershipTypes = membershipTypes
+            };
+            
+            return View(viewMdoel);
+        }
+
         // GET: Customer
         public ActionResult Index()
         {
@@ -30,6 +41,8 @@ namespace Vidly.Controllers
             return View(customers);
 
         }
+
+        
 
         public ActionResult Details(int id)
         {
