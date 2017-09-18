@@ -233,9 +233,42 @@
     <Compile Include="Migrations\201709161743595_UpdateMembershipTypeID.Designer.cs">
       <DependentUpon>201709161743595_UpdateMembershipTypeID.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709161854161_AddMembershipName.cs" />
+    <Compile Include="Migrations\201709161854161_AddMembershipName.Designer.cs">
+      <DependentUpon>201709161854161_AddMembershipName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709161859196_UpdateMembershipName.cs" />
+    <Compile Include="Migrations\201709161859196_UpdateMembershipName.Designer.cs">
+      <DependentUpon>201709161859196_UpdateMembershipName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709161953262_AddBirthdateColumn.cs" />
+    <Compile Include="Migrations\201709161953262_AddBirthdateColumn.Designer.cs">
+      <DependentUpon>201709161953262_AddBirthdateColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709161955297_UpdateBirthdateColumnType.cs" />
+    <Compile Include="Migrations\201709161955297_UpdateBirthdateColumnType.Designer.cs">
+      <DependentUpon>201709161955297_UpdateBirthdateColumnType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709172343465_FixBirthdateColumn.cs" />
+    <Compile Include="Migrations\201709172343465_FixBirthdateColumn.Designer.cs">
+      <DependentUpon>201709172343465_FixBirthdateColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709172350561_FixCurrentSituation.cs" />
+    <Compile Include="Migrations\201709172350561_FixCurrentSituation.Designer.cs">
+      <DependentUpon>201709172350561_FixCurrentSituation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709180250201_FixWrongTypeIssue.cs" />
+    <Compile Include="Migrations\201709180250201_FixWrongTypeIssue.Designer.cs">
+      <DependentUpon>201709180250201_FixWrongTypeIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709180554215_Exercise3.cs" />
+    <Compile Include="Migrations\201709180554215_Exercise3.Designer.cs">
+      <DependentUpon>201709180554215_Exercise3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genres.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -307,6 +340,7 @@
     <Content Include="Views\Customer\Index.cshtml" />
     <Content Include="Views\Customer\Details.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -351,6 +385,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709161743595_UpdateMembershipTypeID.resx">
       <DependentUpon>201709161743595_UpdateMembershipTypeID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709161854161_AddMembershipName.resx">
+      <DependentUpon>201709161854161_AddMembershipName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709161859196_UpdateMembershipName.resx">
+      <DependentUpon>201709161859196_UpdateMembershipName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709161953262_AddBirthdateColumn.resx">
+      <DependentUpon>201709161953262_AddBirthdateColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709161955297_UpdateBirthdateColumnType.resx">
+      <DependentUpon>201709161955297_UpdateBirthdateColumnType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709172343465_FixBirthdateColumn.resx">
+      <DependentUpon>201709172343465_FixBirthdateColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709172350561_FixCurrentSituation.resx">
+      <DependentUpon>201709172350561_FixCurrentSituation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709180250201_FixWrongTypeIssue.resx">
+      <DependentUpon>201709180250201_FixWrongTypeIssue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709180554215_Exercise3.resx">
+      <DependentUpon>201709180554215_Exercise3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
