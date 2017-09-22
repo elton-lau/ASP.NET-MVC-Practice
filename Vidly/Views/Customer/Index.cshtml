@@ -25,10 +25,10 @@ else
             @foreach (var customer in Model)
             {
                 <tr>
-                    <td>@Html.ActionLink(customer.Name, "Details", "Customer", new { id = customer.Id}, null)</td>
-                    <td>@customer.MembershipTypeId.MembershipName</td>
+                    <td>@Html.ActionLink(customer.Name, "Edit", "Customer", new { id = customer.Id}, null)</td>
+                    <td>@customer.MembershipType.MembershipName</td>
                     
-                    <!--<td>@customer.MembershipTypeId.DiscountRate%</td>--> 
+                    <!--<td>@customer.MembershipType.DiscountRate%</td>--> 
                 </tr>
             }
         </tbody>
